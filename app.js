@@ -6,7 +6,6 @@ const app = express();
 
 const router= express.Router();
 //Rutas crud
-//
 router.post("/",async (req, res)=>{
     const body = req.body;
     const respuesta = await ModelUser.create(body)
